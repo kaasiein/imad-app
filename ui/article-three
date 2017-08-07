@@ -1,0 +1,15 @@
+<html>
+    <head><title>Article three I Kasi Ramanathan</title></head>
+    <body>
+        <div>
+            <a href="/">Home</a>
+        </div>
+        <hr/>
+        <h3>Article Three</h3>
+        <div>Aug 1, 2017</div>
+        <div><p>This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. </p>
+        <p>This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. </p>
+        <p>This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. </p>
+        </div>
+    </body>
+</html>
