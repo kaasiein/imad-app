@@ -4,13 +4,38 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
+var articleOne = {
+    title: 'Article one I Kasi'
+};
+function createTemplate(data){
+    var title=data.title;
+    var htmlTemplate=`<html>
+        <head><title>${title}</title>
+            <link href="/ui/style.css" rel="stylesheet" />
+        </head>
+        <body>
+            <div>
+                <div class="container">
+                    <a href="/">Home</a>
+                </div>
+                <hr/>
+                <h3>Article One</h3>
+                <div>Aug 1, 2017</div>
+                <div><p>This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. </p>
+                <p>This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. </p>
+                <p>This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. This is content for my first Article. </p>
+                </div>
+            </div>
+        </body>
+    </html>`;
+    return htmlTemplate;
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/artical-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate( articleOne));
 });
 
 app.get('/artical-two', function (req, res){
